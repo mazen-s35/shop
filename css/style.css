@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    padding-top: 80px;
+}
+
+.counteuo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 5px 3px 0 rgb(226, 219, 219);
+    justify-content: space-between;
+    z-index: 1000;
+    font-size: 16px;
+    padding: 20px 9%;
+}
+
+.counteuo .logo {
+    margin: 10px;
+}
+
+.counteuo .navbar a {
+    margin: 10px;
+    color: #443;
+}
+
+.cart {
+    cursor: pointer;
+    position: relative;
+}
+
+.addCar {
+    width: 80px;
+    height: 107px;
+    background-color: #ddd;
+    position: absolute;
+    right: 22%;
+    top: 68%;
+    display: none;
+}
+
+.addCar i {
+    text-align: right;
+    font-size: 25px;
+    cursor: pointer;
+    color: #443;
+}
+
+.iam {
+    width: 64px;
+}
+
+.counteuo .bars {
+    font-size: 20px;
+    color: #443;
+    display: none;
+    cursor: pointer;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 9%;
+    margin: 20px;
+}
+
+.one-image {
+    margin: 5px;
+}
+
+.one-image img {
+    border-radius: 5px;
+    height: 100%;
+    margin-left: 14%;
+}
+
+.shop .image {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shop .image img.active,
+.shop .image img:hover {
+    border: 1px solid rgb(221, 146, 7);
+    opacity: .5;
+}
+
+.shop .image img {
+    height: 100%;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.shop .box-contenre {
+    width: 425px;
+    margin: 10px;
+}
+
+.shop .box-contenre .one {
+    color: orange;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+.shop .box-contenre h1 {
+    font-size: 35px;
+    color: #443;
+    line-height: 1.2;
+}
+
+.shop .box-contenre p {
+    font-size: 20px;
+    color: #443;
+    line-height: 1.5;
+}
+
+.shop .box-contenre .two {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.9;
+}
+
+.shop .box-contenre .selay {
+    background-color: #eee;
+    color: orange;
+    padding: 3px;
+    margin: 5px;
+    line-height: 1.9;
+}
+
+.shop .box-contenre .three {
+    font-size: 12px;
+    text-decoration: line-through;
+    display: block;
+    line-height: 1.8;
+}
+
+.count {
+    margin: 10px;
+}
+
+.count span {
+    background-color: #ddd;
+    padding: 0 9px 2px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.count .btn {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(221, 146, 7);
+    border-radius: 5px;
+    color: #fff;
+}
+
+@media(max-width: 779px) {
+    .counteuo .navbar {
+        position: absolute;
+        top: 99%;
+        right: 0;
+        left: 0;
+        background: #fff;
+        display: none;
+    }
+    .counteuo .navbar.active {
+        display: block;
+    }
+    .counteuo .navbar a {
+        display: block;
+        margin: 10px;
+    }
+    .counteuo .bars {
+        display: initial;
+    }
+    .fa-times {
+        transform: rotate(180deg);
+    }
+}
+
+@media(max-width: 995px) {
+    .one-image {
+        height: 100%;
+    }
+}
+
+@media(max-width: 612px) {
+    .shop {
+        display: block;
+        padding: 20px 9%;
+        margin: 20px;
+    }
+    .shop .image {
+        display: none;
+    }
+    .one-image img {
+        width: 100%;
+        margin: 3%;
+    }
+    .counteuo {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+    }
+}
+
+@media(max-width: 450px) {
+    .counteuo .navbar {
+        position: absolute;
+        top: 99%;
+        right: 0;
+        left: 0;
+        background: #fff;
+        display: none;
+    }
+    .counteuo .navbar a.active {
+        display: block;
+    }
+    .counteuo .navbar a {
+        display: block;
+        margin: 10px;
+    }
+    .counteuo .bars {
+        display: initial;
+    }
+    .fa-times {
+        transform: rotate(180deg);
+    }
+}
